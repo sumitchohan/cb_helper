@@ -1,0 +1,1 @@
+docker run -p 3000:8000 --add-host=host.docker.internal:host-gateway 1212 &
