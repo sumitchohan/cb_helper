@@ -1,9 +1,10 @@
+var couchbase = require('couchbase')
 const myArgs = process.argv.slice(2);
-var protocol="couchbase://"; 
-if(myArgs.length>1 && myArgs[1]=='s'){
-    protocol='couchbases://';
+var protocol = "couchbase://";
+if (myArgs.length > 1 && myArgs[1] == 's') {
+    protocol = 'couchbases://';
 }
-const clusterConnStr = protocol+myArgs[0];
+const clusterConnStr = protocol + myArgs[0];
 console.log(clusterConnStr);
 const cloudRootCertificate = 'root.pem';
 const username = 'dbuser';
