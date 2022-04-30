@@ -1,1 +1,6 @@
+https://labs.play-with-docker.com/
+
+
 docker run -p 3000:8000 --add-host=host.docker.internal:host-gateway 1212 &
+
+docker run -d --name ce-6.5 -p 8091-8096:8091-8096 -p 11210-11211:11210-11211 couchbase:community-6.5.0
